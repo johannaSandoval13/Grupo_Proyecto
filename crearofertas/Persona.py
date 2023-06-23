@@ -19,5 +19,3 @@ class Persona(Usuario):
         return self.__exp
     def setExp(self,exp):
         self.__exp=exp
-
-
