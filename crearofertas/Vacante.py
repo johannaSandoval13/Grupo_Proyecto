@@ -7,6 +7,16 @@ class Vacante:
         self.__salario = salario
         self.__expNecesaria = expNecesaria
         self.__tipoContrato = tipoContrato
-        self.ubicacion=Ubicacion()
-        self.ocupacion=Ocupacion()
-        
+        self.ubicacion=Ubicacion(codDepartmento="",codMunicipio="",nombreDepartamento="",nombreMunicipio="")
+        self.ocupacion=Ocupacion(codigo="",nombre="",descripcion="")
+    def getnumVacantes(self):
+        return self.__numVacantes
+
+    def getsalario(self):
+        return self.__salario
+
+    def getexpNecesaria(self):
+        return self.__expNecesaria
+
+    def gettipoContrato(self):
+        return self.__tipoContrato        
