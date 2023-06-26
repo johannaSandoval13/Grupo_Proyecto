@@ -6,6 +6,8 @@ class Empresa(Usuario):
         self.__rLegal=rLegal
         self.__nTrabajadores=nTrabajadores
         self.__aEconomica=aEconomica
+        self.__vacantes=[]
+        self.__cargos=[]
 
     def getrLegal(self):
         return self.__rLegal
@@ -19,3 +21,12 @@ class Empresa(Usuario):
         return self.__aEconomica
     def setContraseña(self,aEconomica):
         self.__aEconomica=aEconomica
+    def verOcupaciones(self):
+        cont=0
+        for l in self.__cargos:
+            cont+=1
+            print(f"{cont}. {l.getCodigo()} {l.getNombre()}")
+            print("Funciones: ")
+            print(f"{l.verFuncionesCargo()}")
+    def Ocupaciones(self):
+        return self.__cargos
