@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: white;
+  }
+  
+  .header-top {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  .logo-text {
+    color: #66cc99; 
+    margin-left: 30px;
+    font-weight: bold;
+    margin-top: 10px; 
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 30;
+    padding: 20;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.left-section {
+  width: calc(50% - 10px);
+}
+
+.gray-box {
+  background-color: #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.gray-box h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.gray-box input,
+.gray-box select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+
+.right-section {
+  width: calc(50% - 10px);
+}
+
+.dark-gray-box {
+  background-color: #666;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.dark-gray-box h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.vertical-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-box h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.vertical-box input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.vertical-box button  {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
