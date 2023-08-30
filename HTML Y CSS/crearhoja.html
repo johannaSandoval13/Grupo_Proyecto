@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Hoja de vida</title>
+    <link rel="stylesheet" href="css/hoja.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo" id="logo">
+        <h1>Sim selección de personal</h1>
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">PQRS</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Crear hoja de vida</h1>
+    <main>
+        <aside id="form-aside">
+            <div id="form-labels">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="doc">Documento de identidad:</label>
+                <input type="text" id="doc" name="doc">
+                <label for="tipo">Tipo de documento:</label>
+                <input type="text" id="tipo" name="tipo">
+                <label for="mun">Municipio de residencia:</label>
+                <input type="text" id="mun" name="mun">
+                <label for="meses">Meses de experiencia:</label>
+                <input type="" id="meses" name="meses">
+
+            </div>
+        </aside>
+        <aside id="textarea-aside">
+            <textarea rows="6" cols="50">Perfil Ocupacional</textarea>
+            <div id="file-buttons">
+                <h3>Estudios:</h3>
+                <p>Aqui suba los certificados del respectivo nivel de estudios:</p>
+                <label for="bachiller">Bachiller:</label>
+                <input type="file" id="bachiller" name="bachiller"><br>
+                <label for="primaria">Primaria:</label>
+                <input type="file" id="primaria" name="primaria"><br>
+                <label for="tec">Tecnico/Tecnologo:</label>
+                <input type="file" id="tec" name="tec"><br>
+                <label for="pro">Titulo profesional:</label>
+                <input type="file" id="pro" name="pro"><br>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600;10..48,800&family=Phudu:wght@500&family=Quicksand&display=swap');
+*{
+    font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Phudu', cursive;
+font-family: 'Quicksand', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background: white;
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    border: #5F5B6B solid 5px;
+    border-top: none;
+    border-left: none;
+
+  }
+
+  header img {
+    width: 120px;
+    height: 100px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  header h1 {
+    color: green;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    top: -20px;
+  }
+  nav {
+    float: left;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-size: 14pt;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #93d47f;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+nav ul li:hover {
+    background: #5F5B6B;
+}
+
+  form {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 30px;
+    max-width: 500px;
+  }
+
+  form h3 {
+    color: green;
+    margin: 0;
+  }
+
+  form label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+  }
+
+  form input[type="checkbox"] {
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  form a {
+    float: right;
+    color: green;
+    text-decoration: none;
+  }
+
+  form button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  form p {
+    margin-top: 45px;
+    text-align: center;
+  }
+
+  form p {
+    color: green;
+    text-decoration: none;
+  }
+a:link{
+    color: rgb(154, 224, 195);
+}
+a:visited{
+    color: rgb(76, 68, 190);
+}
