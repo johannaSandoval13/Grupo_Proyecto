@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crear vacante</title>
+    <link rel="stylesheet" href="crearvacante.css">
+</head>
+<body>
+    <header>
+        <h1>Sim.Seleccion de personal </h1>
+        <a href="#">Inicio</a>
+        <a href="#">PQRS</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Ayuda</a>
+    </header>
+    <section class="segunda">
+    <h2 class="titulo1">Crear vacante</h2>
+    <main class="container1">
+        <h3 class="habilidades">Habilidades</h3>
+        <textarea name="habilidad" id="" cols="30" rows="10"></textarea>
+        <h3 class="competencias">Competencias</h3>
+        <textarea name="habilidad" id="habilidad" cols="30" rows="10"></textarea>
+        <div>
+            <label for="cierre">Fecha de cierre de la solicitud</label>
+            <input type="date" name="cierre"id="cierre" >
+            </div>
+        </main>
+    <main class="container2">
+        <h4>Ocupacion principal</h4>
+        <select name="ocupacion" id="ocupacion">
+            <option value="desarrollador">Desarrollador</option>
+            <option value="cocinero">Cocinero</option>
+        </select>
+        
+        
+
+        <div>
+            <h4>Experiencia necesaria(meses)</h4>
+            <label for="experiencia"></label>
+            <input type="text" name="experiencia" id="experiencia">
+        </div>
+        <section>
+        <h4>Numero de puestos disponibles </h4>
+        <select name="puestos" id="puestos">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">10</option>
+        </select>
+        </section>
+        <section>
+            <h4>Tipo de contrato </h4>
+            <select name="contrato" id="contrato">
+                <option value="indefinido">Contrato a termino indefinido</option>
+                <option value="obra">Contrato por obra labor</option>
+                <option value="temporal">Contrato temporal</option>
+                <option value="fijo">Contrato a termino fijo</option>
+            </select>
+            </section>
+            <section>
+                <h4>Jornada de trabajo</h4>
+                <select name="jornada" id="jornada">
+                <option value="diurna">Jornada diurna</option>
+                <option value="nocturna">Jornada nocturna</option>
+            </select>
+            </section>
+            <section>
+                <h4>Rango de salario</h4>
+                <select name="salario" id="salario">
+                <option value="minimo1">800.000-1.200.000</option>
+                <option value="minimo2">1.000.000-1.500.000</option>
+                <option value="minimo3">1.500.000-2.500.000</option>
+                <option value="minimo4">2.500.000-3.500.000</option>
+            </select>
+            </section></section>        
+
+    </main>
+</body>
+</html>
