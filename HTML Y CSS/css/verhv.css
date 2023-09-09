@@ -1,18 +1,17 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     background-color: #F8F8F8;
     color: #05372D;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
 
 header {
     background-color: #FFFFFF;
@@ -73,89 +72,49 @@ nav ul li a:hover {
 }
 
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 36px;
+    color: #05372D;
 }
 
-
-#hoja-form {
-    width: 80%;
-    margin-top: 100px;
+main {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #F1F0F0;
     border-radius: 10px;
     border: 1px solid #05372D;
-    text-align: center;
-}
-
-#form-labels label,
-#textarea-aside h3,
-#textarea-aside p {
-    color: #05372D;
-    font-weight: bold;
-}
-
-#form-labels {
-    text-align: center;
-    gap: 15px;
-}
-
-#form-labels label {
-    display: block;
-    gap: 15px;
     text-align: left;
-    margin-bottom: 10px;
-}
-
-#textarea-aside {
-    background-color: #F1F0F0;
-    padding: 20px;
-}
-
-#file-buttons {
     margin-top: 20px;
 }
 
-textarea {
-    width: 100%;
-    background-color: #F1F0F0;
-    padding: 10px;
-    color: #000000;
-    border: 1px solid #05372D;
-    border-radius: 5px;
-    resize: none;
+#hoja-vida h2 {
+    color: #05372D;
+    margin-top: 20px;
+    font-size: 24px;
 }
 
-input[type="text"],
-input[type="file"] {
-    width: 100%;
-    background-color: #F1F0F0;
-    padding: 10px;
-    color: #000000;
-    border: 1px solid #05372D;
-    border-radius: 5px;
+#hoja-vida ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-
-.button {
-    background-color: #05372D;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+#hoja-vida li {
+    margin-top: 15px;
 }
 
-.button:hover {
-    background-color: #7fc0b3;
+#hoja-vida li h3 {
+    color: #05372D;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
+#hoja-vida p {
+    margin: 5px 0;
+}
 
 footer {
     background-color: #05372D;

@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +10,6 @@ body {
     color: #05372D;
     font-family: 'Montserrat', sans-serif;
 }
-
 
 header {
     background-color: #FFFFFF;
@@ -65,26 +62,13 @@ nav ul li a {
     text-decoration: none;
     color: #05372D;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3
 }
-
-nav ul li a:hover {
-    color: #7fc0b3;
-}
-
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-
 #hoja-form {
     width: 80%;
     margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 200px;
     padding: 20px;
     background-color: #F1F0F0;
     border-radius: 10px;
@@ -111,13 +95,23 @@ main {
     margin-bottom: 10px;
 }
 
-#textarea-aside {
-    background-color: #F1F0F0;
-    padding: 20px;
-}
 
-#file-buttons {
-    margin-top: 20px;
+input[type="text"] {
+    width: 100%;
+    background-color: #F1F0F0;
+    padding: 10px;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+}
+#textarea-aside textarea {
+    width: 100%;
+    background-color: #F1F0F0;
+    padding: 10px;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+    resize: none;
 }
 
 textarea {
@@ -129,18 +123,6 @@ textarea {
     border-radius: 5px;
     resize: none;
 }
-
-input[type="text"],
-input[type="file"] {
-    width: 100%;
-    background-color: #F1F0F0;
-    padding: 10px;
-    color: #000000;
-    border: 1px solid #05372D;
-    border-radius: 5px;
-}
-
-
 .button {
     background-color: #05372D;
     color: #FFFFFF;
@@ -156,7 +138,32 @@ input[type="file"] {
     background-color: #7fc0b3;
 }
 
+#form-labels label[for="fechaCierre"] {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #05372D;
+    font-weight: bold;
+}
 
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #F1F0F0;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+    outline: none; 
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #F1F0F0;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+}
 footer {
     background-color: #05372D;
     color: #FFFFFF;

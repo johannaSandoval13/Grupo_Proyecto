@@ -1,24 +1,23 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    font-family: 'Montserrat', sans-serif;
 }
-
 body {
     background-color: #F8F8F8;
     color: #05372D;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
 
 header {
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: #2c554d solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
-
 #main-header {
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -65,98 +64,71 @@ nav ul li a {
     text-decoration: none;
     color: #05372D;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; 
 }
-
-nav ul li a:hover {
+nav ul li a:hover{
     color: #7fc0b3;
+
+}
+/*  banner */
+.banner {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between; 
 }
 
+.banner-text {
+    flex: 1; 
+    text-align: center;
+}
 
-main {
+.banner-text h1 {
+    font-size: 24px;
+}
+
+.banner-image img {
+    width: 600px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center; 
+}
+
+.buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-
-#hoja-form {
-    width: 80%;
-    margin-top: 100px;
-    padding: 20px;
-    background-color: #F1F0F0;
-    border-radius: 10px;
-    border: 1px solid #05372D;
-    text-align: center;
-}
-
-#form-labels label,
-#textarea-aside h3,
-#textarea-aside p {
-    color: #05372D;
-    font-weight: bold;
-}
-
-#form-labels {
-    text-align: center;
-    gap: 15px;
-}
-
-#form-labels label {
-    display: block;
-    gap: 15px;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-#textarea-aside {
-    background-color: #F1F0F0;
-    padding: 20px;
-}
-
-#file-buttons {
     margin-top: 20px;
 }
 
-textarea {
-    width: 100%;
-    background-color: #F1F0F0;
-    padding: 10px;
-    color: #000000;
-    border: 1px solid #05372D;
-    border-radius: 5px;
-    resize: none;
-}
-
-input[type="text"],
-input[type="file"] {
-    width: 100%;
-    background-color: #F1F0F0;
-    padding: 10px;
-    color: #000000;
-    border: 1px solid #05372D;
-    border-radius: 5px;
-}
-
-
 .button {
-    background-color: #05372D;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
+    margin: 0 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button label {
+    margin-top: 10px;
 }
 
-.button:hover {
-    background-color: #7fc0b3;
+.button img {
+    max-width: 100%;
+    height: auto;
 }
-
-
+.button img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out; 
+}
+.estudiante{
+    width: 350px;
+}
+.profesor{
+    width: 400px;
+}
 footer {
     background-color: #05372D;
     color: #FFFFFF;

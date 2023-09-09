@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Empresa</title>
+    <link rel="stylesheet" href="css/vacante.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="shortcut icon" href="icono.png">
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <div class="logo">
+                <img src="a.png" alt="Tu Empresa">
+            </div>
+            <ul>
+                <li><a href="homepage.html">Inicio</a></li>
+                <li><a href="verpostulados.html">Solicitudes</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Crear Hoja de Vida</h1>
+    <main>
+        <div id="form-container">
+            <form id="hoja-form">
+                <section id="form-aside">
+                    <div id="form-labels">
+                        <label for="cno">Ocupacion principal:</label>
+                        <select name="cno" id="cno">
+                            <option value="1">Ocupacion 1</option>
+                            <option value="2">Ocupacion 2</option>
+                            <option value="3">Ocupacion 3</option>
+                            <option value="4">Ocupacion 4</option>
+                        </select>
+                        <label for="exp">Experienci necesaria:</label>
+                        <input type="text" id="exp" name="exp">
+                        <br>
+                        <label for="contrato">Tipo de contrato:</label>
+                        <select name="contrato" id="contrato">
+                            <option value="1">contrato 1</option>
+                            <option value="2">contrato 2</option>
+                            <option value="3">contrato 3</option>
+                            <option value="4">contrato 4</option>
+                        </select>
+                        <br>
+                        <label for="jornada">Jornada de trabajo:</label>
+                        <select name="jornada" id="jornada">
+                            <option value="1">jornada 1</option>
+                            <option value="2">jornada 2</option>
+                            <option value="3">jornada 3</option>
+                            <option value="4">jornada 4</option>
+                        </select>
+                        <br>
+                        <label for="rango">Rango salarial:</label>
+                        <select name="rango" id="rango">
+                            <option value="1">rango 1</option>
+                            <option value="2">rango 2</option>
+                            <option value="3">rango 3</option>
+                            <option value="4">rango 4</option>
+                        </select>
+                        <label for="rep">Representante Legal:</label>
+                        <input type="text" id="rep" name="rep">
+                        <label for="correo">Correo del Representante Legal:</label>
+                        <input type="text" id="correo" name="correo">
+                        <label for="telefono">Teléfono Empresarial:</label>
+                        <input type="text" id="telefono" name="telefono">
+                    </div>
+                </section>
+                <br>
+                <br>
+                <hr>
+                <section id="textarea-aside">
+                    <textarea rows="6" cols="50">Habilidades</textarea>
+                    <textarea rows="6" cols="50">Competencias</textarea>
+                </section>
+                <label for="fechaCierre">Fecha de Cierre:</label>
+                <input type="date" id="fechaCierre" name="fechaCierre">
+                <div id="button-container">
+                    <input type="submit" value="Enviar" class="button">
+                    <input type="reset" value="Reset" class="button">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>ADSO 2023 ★</p>
+    </footer>
+</body>
+</html>

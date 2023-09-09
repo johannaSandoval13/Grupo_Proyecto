@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Empresa</title>
+    <link rel="stylesheet" href="css/empresa.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="shortcut icon" href="icono.png">
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <div class="logo">
+                <img src="a.png" alt="Tu Empresa">
+            </div>
+            <ul>
+                <li><a href="homepage.html">Inicio</a></li>
+                <li><a href="vacante.html">Crear vacantes</a></li>
+                <li><a href="roles.html">Roles</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Crear Hoja de Vida</h1>
+    <main>
+        <div id="form-container">
+            <form id="hoja-form">
+                <section id="form-aside">
+                    <div id="form-labels">
+                        <label for="razon_social">Razón Social:</label>
+                        <input type="text" id="razon_social" name="razon_social">
+                        <br>
+                        <label for="nit">NIT:</label>
+                        <input type="text" id="nit" name="nit">
+                        <br>
+                        <label for="mun">Municipio de Ubicación:</label>
+                        <select name="mun" id="mun">
+                            <option value="1">Municipio 1</option>
+                            <option value="2">Municipio 2</option>
+                            <option value="3">Municipio 3</option>
+                            <option value="4">Municipio 4</option>
+                        </select>
+                        <br>
+                        <label for="actividad">Actividad Económica:</label>
+                        <select name="actividad" id="actividad">
+                            <option value="1">Actividad 1</option>
+                            <option value="2">Actividad 2</option>
+                            <option value="3">Actividad 3</option>
+                            <option value="4">Actividad 4</option>
+                        </select>
+                        <label for="rep">Representante Legal:</label>
+                        <input type="text" id="rep" name="rep">
+                        <label for="correo">Correo del Representante Legal:</label>
+                        <input type="text" id="correo" name="correo">
+                        <label for="telefono">Teléfono Empresarial:</label>
+                        <input type="text" id="telefono" name="telefono">
+                    </div>
+                </section>
+                <div id="button-container">
+                    <input type="submit" value="Enviar" class="button">
+                    <input type="reset" value="Reset" class="button">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>ADSO 2023 ★</p>
+    </footer>
+</body>
+</html>
+

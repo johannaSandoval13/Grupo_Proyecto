@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #F8F8F8;
+    color: #05372D;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: #2c554d solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#main-header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+}
+
+.header-hidden {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #05372D;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+nav ul li a:hover{
+    color: #7fc0b3;
+
+}
+
+#empleos-section {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #05372D;
+
+}
+
+table th,
+table td {
+    border: 1px solid #05372D;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #05372D;
+    color: #FFFFFF;
+}
+
+table td button {
+    background-color: #05372D;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+table td button:hover {
+    background-color: #7fc0b3;
+}
+footer {
+    background-color: #05372D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+#filtros-section {
+    background-color: #F1F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#filtros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+#filtros-container label {
+    font-weight: bold;
+    color: #05372D;
+}
+
+#filtros-container select,
+#fecha-fin {
+    width: 100%;
+    padding: 10px;
+    background-color: #F1F0F0;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+}
+
+#rango-salarial {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #05372D;
+    font-weight: bold;
+}
+
+#rango-salarial input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#rango-salarial label {
+    margin-left: 5px;
+}
+
+#filtros-section h2 {
+    color: #05372D;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

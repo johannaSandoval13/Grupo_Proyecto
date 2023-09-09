@@ -1,106 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600;10..48,800&family=Phudu:wght@500&family=Quicksand&display=swap');
-*{
-    font-family: 'Bricolage Grotesque', sans-serif;
-font-family: 'Phudu', cursive;
-font-family: 'Quicksand', sans-serif;
-}
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-  }
+    box-sizing: border-box;
+}
 
-  header {
-    background: white;
-    width: 100%;
-    height: 150px;
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    border: #5F5B6B solid 5px;
+body {
+    background-color: #F8F8F8;
+    color: #05372D;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: #2c554d solid;
     border-top: none;
     border-left: none;
+    border-right: none;
+}
 
-  }
+#main-header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+}
 
-  header img {
-    width: 120px;
-    height: 100px;
-    margin-right: 10px;
-    display: inline-block;
-  }
+.header-hidden {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    opacity: 0.9;
+}
 
-  header h1 {
-    color: green;
-    margin: 0;
-    display: inline-block;
-    position: relative;
-    top: -20px;
-  }
-  nav {
-    float: left;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 60px;
+}
+
+nav ul {
     list-style: none;
-    overflow: hidden; 
-  }
-  
-  nav ul li {
-    float: left;
-    font-size: 14pt;
-  }
-  nav ul li a {
-    display: block;
-    padding: 10px;
-    color: #93d47f;
-    text-decoration: none;
-    padding: 8px 15px;
-}
-nav ul li:hover {
-    background: #5F5B6B;
+    display: flex;
 }
 
-  form {
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #05372D;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+
+nav ul li a:hover{
+    color: #7fc0b3;
+}
+
+/* Formulario */
+form {
     background-color: #f0f0f0;
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     padding: 30px;
     max-width: 500px;
-  }
+}
 
-  form h3 {
+form h3 {
     color: green;
     margin: 0;
-  }
+}
 
-  form label {
+form label {
     display: block;
     margin-top: 10px;
     color: black;
-  }
+}
 
-  form input[type="checkbox"] {
+form input[type="checkbox"] {
     margin-right: 10px;
     display: inline-block;
-  }
+}
 
-  form input[type="text"],
-  form input[type="password"] {
+form input[type="text"],
+form input[type="password"] {
     width: 100%;
     padding: 5px;
     margin-top: 5px;
-  }
+}
 
-  form a {
+form a {
     float: right;
     color: green;
     text-decoration: none;
-  }
+}
 
-  form button {
+form button {
     background-color: green;
     color: white;
     border: none;
@@ -108,20 +123,41 @@ nav ul li:hover {
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
-  }
+}
 
-  form p {
+form p {
     margin-top: 45px;
     text-align: center;
-  }
-
-  form p {
     color: green;
     text-decoration: none;
-  }
+}
+
 a:link{
     color: rgb(48, 97, 77);
 }
-a:visited{
-    color: rgb(76, 68, 190);
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
+
+.radio-group input[type="radio"] {
+  margin-bottom: 5px;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+label[for="estudiante"],
+label[for="docente"] {
+  cursor: pointer;
+  display: block;
+}
+
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+

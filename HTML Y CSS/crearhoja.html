@@ -5,66 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Hoja de vida</title>
     <link rel="stylesheet" href="css/hoja.css">
+    <link rel="shortcut icon" href="icono.png">
 </head>
 <body>
-    <header>
-        <img src="manos.png" alt="Logo" id="logo">
-        <h1>SIMULADOR SELECCION DE PERSONAL</h1>
+    <header id="main-header">
         <nav>
+            <div class="logo">
+                <img src="a.png" alt="Tu Empresa">
+            </div>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">PQRS</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Ayuda</a></li>
+                <li><a href="homepage.html">Inicio</a></li>
+                <li><a href="empresa.html">Empresas</a></li>
+                <li><a href="vervacantes.html">Ver vacantes</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <h1>Crear hoja de vida</h1>
     <main>
-        <aside id="form-aside">
-            <div id="form-labels">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
-                <br>
-                <label for="doc">Documento de identidad:</label>
-                <input type="text" id="doc" name="doc">
-                <br>
-                <label for="tipo">Tipo de documento:</label>
-                <input type="text" id="tipo" name="tipo">
-                <br>
-                <label for="mun">Municipio de residencia:</label>
-                <input type="text" id="mun" name="mun">
-                <br>
-                <label for="meses">Meses de experiencia:</label>
-                <input type="" id="meses" name="meses">
-
-            </div>
-        </aside>
-        <aside id="textarea-aside">
-            <textarea rows="6" cols="50">Perfil Ocupacional</textarea>
-            <br>
-            <div id="file-buttons">
-                <h3>Estudios:</h3>
-                <p>Aqui suba los certificados del respectivo nivel de estudios:</p>
-                <br>
-                <label for="bachiller">Bachiller:</label>
-                <br>
-                <input type="file" id="bachiller" name="bachiller"><br>
-                <br>
-                <label for="primaria">Primaria:</label>
-                <br>
-                <input type="file" id="primaria" name="primaria"><br>
-                <br>
-                <label for="tec">Tecnico/Tecnologo:</label>
-                <br>
-                <input type="file" id="tec" name="tec"><br>
-                <br>
-                <label for="pro">Titulo profesional:</label>
-                <br>
-                <input type="file" id="pro" name="pro"><br>
-            </div>
-        </aside>
+        <div id="form-container">
+            <form id="hoja-form">
+                <section id="form-aside">
+                    <div id="form-labels">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <br>
+                        <label for="doc">Documento de identidad:</label>
+                        <input type="text" id="doc" name="doc">
+                        <br>
+                        <label for="tipo">Tipo de documento:</label>
+                        <input type="text" id="tipo" name="tipo">
+                        <br>
+                        <label for="mun">Municipio de residencia:</label>
+                        <input type="text" id="mun" name="mun">
+                        <br>
+                        <label for="meses">Meses de experiencia:</label>
+                        <input type="text" id="meses" name="meses">
+                    </div>
+                </section>
+                <section id="textarea-aside">
+                    <textarea rows="6" cols="50">Perfil Ocupacional</textarea>
+                    <br>
+                    <div id="file-buttons">
+                        <h3>Estudios:</h3>
+                        <p>Aquí suba los certificados del respectivo nivel de estudios:</p>
+                        <br>
+                        <label for="bachiller">Bachiller:</label>
+                        <br>
+                        <input type="file" id="bachiller" name="bachiller"><br>
+                        <br>
+                        <label for="primaria">Primaria:</label>
+                        <br>
+                        <input type="file" id="primaria" name="primaria"><br>
+                        <br>
+                        <label for="tec">Técnico/Tecnólogo:</label>
+                        <br>
+                        <input type="file" id="tec" name="tec"><br>
+                        <br>
+                        <label for="pro">Título profesional:</label>
+                        <br>
+                        <input type="file" id="pro" name="pro"><br>
+                    </div>
+                </section>
+                <div id="button-container">
+                    <input type="submit" value="Enviar" class="button">
+                    <input type="reset" value="Reset" class="button">
+                </div>
+            </form>
+        </div>
     </main>
+    <footer>
+        <p>ADSO 2023 (✿ヘᴥヘ)</p>
+    </footer>
 </body>
 </html>
