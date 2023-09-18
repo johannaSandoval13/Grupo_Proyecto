@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="icono.png">
+</head>
+    <body>
+        <header id="main-header">
+            <nav>
+                <div class="logo">
+                    <img src="a.png" alt="Tu Empresa">
+                </div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="empresa.html">Empresas</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <script src="css/script.js"></script>
+        <form action="perfil.html">
+            <h3>Tipo de Usuario</h3>
+            <div class="radio-group">
+                <input type="radio" id="estudiante" name="tipoUsuario" value="estudiante">
+                <label for="estudiante">Soy Estudiante</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="docente" name="tipoUsuario" value="docente">
+                <label for="docente">Soy Docente</label>
+            </div>
+            <label for="numeroDocumento">Número de Documento</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <button type="submit">Entrar</button>
+            <p>¿No estás registrado en el sistema?</p>
+            <a href="crearhoja.html">¡Regístrate ahora!</a>
+        </form>
+</body>
+</html>

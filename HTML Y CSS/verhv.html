@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" href="css/verhv.css"> 
+    <link rel="shortcut icon" href="icono.png">
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <div class="logo">
+                <img src="a.png" alt="Tu Empresa">
+            </div>
+            <ul>
+                <li><a href="homepage.html">Inicio</a></li>
+                <li><a href="empresa.html">Empresas</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <h1>Mi Hoja de Vida</h1>
+    <main>
+        <div id="hoja-vida">
+            <h2>Datos Personales</h2>
+            <p>Nombre: [Nombre del Usuario]</p>
+            <p>Número de Documento: [Número de Documento]</p>
+            <!-- Agrega más detalles personales aquí -->
+
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li>
+                    <h3>Empresa 1</h3>
+                    <p>Cargo: [Cargo]</p>
+                    <p>Fecha de Inicio: [Fecha de Inicio]</p>
+                    <p>Fecha de Finalización: [Fecha de Finalización]</p>
+                </li>
+
+            </ul>
+
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <h3>Institución 1</h3>
+                    <p>Título: [Título Obtenido]</p>
+                    <p>Fecha de Graduación: [Fecha de Graduación]</p>
+
+                </li>
+            </ul>
+            <section id="documentos">
+                <h2>Vista Previa de Documentos</h2>
+                <p>Aquí puedes ver los documentos relacionados:</p>
+                
+
+                <button id="ver-documento">Ver Documento</button>
+
+                <div id="vista-previa-documento">
+                    <iframe src="documento.pdf" width="100%" height="500"></iframe>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <p>ADSO 2023 ★</p>
+    </footer>
+    <script>
+
+        const botonVerDocumento = document.getElementById('ver-documento');
+        const vistaPreviaDocumento = document.getElementById('vista-previa-documento');
+
+        botonVerDocumento.addEventListener('click', () => {
+            vistaPreviaDocumento.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
