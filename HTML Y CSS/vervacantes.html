@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Empleos</title>
+    <link rel="stylesheet" href="css/vervacantes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="shortcut icon" href="icono.png">
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <div class="logo">
+                <img src="a.png" alt="Tu Empresa">
+            </div>
+            <ul>
+                <li><a href="homepage.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Ofertas de Empleo</h1>
+    <main>
+        <section id="empleos-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cargo</th>
+                        <th>Fecha de Cierre</th>
+                        <th>Experiencia Necesaria</th>
+                        <th>Más</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Desarrollador Web</td>
+                        <td>2023-12-31</td>
+                        <td>2 años</td>
+                        <td><button>Ver más</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Diseñador Gráfico</td>
+                        <td>2023-11-30</td>
+                        <td>3 años</td>
+                        <td><button>Ver más</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Contador</td>
+                        <td>2023-10-15</td>
+                        <td>5 años</td>
+                        <td><button>Ver más</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
+        <section id="filtros-section">
+            <h2>Filtros de Búsqueda</h2>
+            <div id="filtros-container">
+                <label for="municipio">Municipio:</label>
+                <select name="municipio" id="municipio">
+                    <option value="1">Municipio 1</option>
+                    <option value="2">Municipio 2</option>
+                    <option value="3">Municipio 3</option>
+                    <option value="4">Municipio 4</option>
+                </select>
+        
+                <label for="tipo-contrato">Tipo de Contrato:</label>
+                <select name="tipo-contrato" id="tipo-contrato">
+                    <option value="1">Contrato 1</option>
+                    <option value="2">Contrato 2</option>
+                    <option value="3">Contrato 3</option>
+                    <option value="4">Contrato 4</option>
+                </select>
+        
+                <label for="jornada">Jornada de Trabajo:</label>
+                <select name="jornada" id="jornada">
+                    <option value="1">Jornada 1</option>
+                    <option value="2">Jornada 2</option>
+                    <option value="3">Jornada 3</option>
+                    <option value="4">Jornada 4</option>
+                </select>
+        
+                <label for="fecha-fin">Fecha de Finalización:</label>
+                <input type="date" id="fecha-fin" name="fecha-fin">
+        
+                <div id="rango-salarial">
+                    <label>Rango Salarial:</label>
+                    <input type="checkbox" id="menos-de-908526" name="rango-salarial" value="Menos de $908.526">
+                    <label for="menos-de-908526">Menos de $908.526</label>
+        
+                    <input type="checkbox" id="1m-1.5m" name="rango-salarial" value="$1.000.000 - $1.500.000">
+                    <label for="1m-1.5m">$1.000.000 - $1.500.000</label>
+        
+                    <input type="checkbox" id="1.5m-2m" name="rango-salarial" value="$1.500.001 - $2.000.000">
+                    <label for="1.5m-2m">$1.500.001 - $2.000.000</label>
+        
+                    <input type="checkbox" id="2m-2.5m" name="rango-salarial" value="$2.000.001 - $2.500.000">
+                    <label for="2m-2.5m">$2.000.001 - $2.500.000</label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>ADSO 2023 ★</p>
+    </footer>
+</body>
+</html>

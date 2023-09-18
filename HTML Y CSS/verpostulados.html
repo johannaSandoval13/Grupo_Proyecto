@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Postulados</title>
+    <link rel="stylesheet" href="css/verpostulados.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="shortcut icon" href="icono.png">
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <div class="logo">
+                <img src="a.png" alt="Tu Empresa">
+            </div>
+            <ul>
+                <li><a href="homepage.html">Inicio</a></li>
+                <li><a href="empresa.html">Crear empresa</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Lista de Aplicaciones</h1>
+    <main>
+        <section id="tabla-section">
+            <table id="tabla-aplicaciones">
+                <thead>
+                    <tr>
+                        <th>Número de Documento</th>
+                        <th>Nombre</th>
+                        <th>Vacante Aplicada</th>
+                        <th>Estado</th>
+                        <th>ID de Empresa Aplicada</th>
+                        <th>Más</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123456789</td>
+                        <td>Juan Pérez</td>
+                        <td>Desarrollador Web</td>
+                        <td>Pendiente</td>
+                        <td>EMP-001</td>
+                        <td><button>Ver más</button></td>
+                    </tr>
+                    <td>963852741</td>
+                    <td>Sue Storm</td>
+                    <td>Diseño web</td>
+                    <td>Contratacion</td>
+                    <td>EMP-023</td>
+                    <td><button>Ver más</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="filtros-section">
+            <h2>Filtros</h2>
+            <div id="filtros-container">
+                <label for="municipio">Municipio:</label>
+                <select name="municipio" id="municipio">
+                    <option value="1">Municipio 1</option>
+                    <option value="2">Municipio 2</option>
+                    <option value="3">Municipio 3</option>
+                    <option value="4">Municipio 4</option>
+                </select>
+
+                <label for="departamento">Departamento:</label>
+                <select name="departamento" id="departamento">
+                    <option value="1">Departamento 1</option>
+                    <option value="2">Departamento 2</option>
+                    <option value="3">Departamento 3</option>
+                    <option value="4">Departamento 4</option>
+                </select>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>ADSO 2023 ★</p>
+    </footer>
+</body>
+</html>

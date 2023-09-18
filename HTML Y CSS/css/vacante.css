@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8F8;
+    color: #05372D;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#main-header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+}
+
+.header-hidden {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #05372D;
+    font-weight: bold;
+    transition: color 0.3
+}
+#hoja-form {
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    padding: 20px;
+    background-color: #F1F0F0;
+    border-radius: 10px;
+    border: 1px solid #05372D;
+    text-align: center;
+}
+
+#form-labels label,
+#textarea-aside h3,
+#textarea-aside p {
+    color: #05372D;
+    font-weight: bold;
+}
+
+#form-labels {
+    text-align: center;
+    gap: 15px;
+}
+
+#form-labels label {
+    display: block;
+    gap: 15px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    background-color: #F1F0F0;
+    padding: 10px;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+}
+#textarea-aside textarea {
+    width: 100%;
+    background-color: #F1F0F0;
+    padding: 10px;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+    resize: none;
+}
+
+textarea {
+    width: 100%;
+    background-color: #F1F0F0;
+    padding: 10px;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+    resize: none;
+}
+.button {
+    background-color: #05372D;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #7fc0b3;
+}
+
+#form-labels label[for="fechaCierre"] {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #05372D;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #F1F0F0;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+    outline: none; 
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #F1F0F0;
+    color: #000000;
+    border: 1px solid #05372D;
+    border-radius: 5px;
+}
+footer {
+    background-color: #05372D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
